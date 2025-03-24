@@ -18,7 +18,7 @@ class ProductAdmin(admin.ModelAdmin):
         'slug':('product_name',)
     }
     list_display = ('product_name', 'category', 'price','stock', 'modified_date', 'created_date')
-    # ordering = ('-date_created',)
+    ordering = ('-created_date',)
 
 
 
